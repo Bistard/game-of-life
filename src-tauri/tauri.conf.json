@@ -1,14 +1,14 @@
 {
   "build": {
-    "beforeDevCommand": "",
-    "beforeBuildCommand": "",
-    "devPath": "../src",
-    "distDir": "../src",
+    "beforeDevCommand": "npm run build",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "../ui/dist",
+    "distDir": "../ui/dist",
     "withGlobalTauri": true
   },
   "package": {
     "productName": "game-of-life",
-    "version": "0.0.0"
+    "version": "0.0.1"
   },
   "tauri": {
     "allowlist": {
