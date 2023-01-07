@@ -20,6 +20,9 @@ const baseConfiguration = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
+        alias: {
+            ui: path.resolve(__dirname, 'ui/'),
+        },
     },
 
     // watch options
@@ -42,7 +45,6 @@ const baseConfiguration = {
     plugins: [],
 };
 
-// entries
 module.exports = [
     Object.assign({}, baseConfiguration, {
         entry: {
